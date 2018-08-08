@@ -8,4 +8,4 @@ RUN apk --no-cache add --virtual native-deps \
     npm install --quiet semantic-release-gitlab && \
     apk del native-deps
     
-CMD["semantic-release-gitlab"]
+CMD ["semantic-release-gitlab"]
