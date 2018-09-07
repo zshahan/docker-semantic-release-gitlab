@@ -5,7 +5,7 @@ RUN apk --no-cache add --virtual native-deps \
       g++ gcc libgcc libstdc++ linux-headers \
       make python curl autoconf automake \
       file nasm zlib-dev && \
-    npm install --quiet semantic-release-gitlab && \
+    npm install --quiet semantic-release-gitlab -g && \
     apk del native-deps
     
 CMD ["semantic-release-gitlab"]
